@@ -1,0 +1,84 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #ccc;
+}
+
+h1 { 
+   text-align: center;
+   margin-top: 100px;
+   font-size: 50px;
+   color: #333;
+}
+
+.container {
+    width: 460px;
+   height: 170px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+#tab {
+   padding: 20px 15px;
+}
+
+.container #tab .tab-content input {
+   width: 300px;
+   height: 35px;
+   border: none;
+   border-bottom: 1px solid #ccc;
+   margin-right: 15px;
+}
+input:focus {
+   outline: none;
+}
+::placeholder {
+   font-size: 16px;
+   font-weight: 500;
+   color: #ccc;
+}
+.container #tab .tab-content button {
+   padding: 8px 15px;
+   background-color: blue;
+   border: none;
+   border-radius: 8px;
+}
+
+.container .tab-name {
+   display: flex;
+   column-gap: 12px;
+   margin-top: 15px;
+}
+.container #tab .tab-content button:focus {
+   outline: none;
+}
+
+
+.active {
+   opacity: 1;
+   color: #000;
+   font-weight: bold;
+}
+
+
+.container .tab-name  {
+   font-size: 18px;
+   font-weight: 500;
+   text-transform: uppercase;
+   color: #000;
+   opacity: 0.5;
+}
+
+.container .tab-comment p {
+   margin-top: 40px;
+   font-size: 20px;
+   font-weight: 600;
+}
